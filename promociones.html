@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Promociones — Living to Eat</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="promociones.css">
+</head>
+
+<body>
+
+  <!-- ---------- Header ---------- -->
+
+  <header class="site-header">
+
+    <div class="brand">
+      <span class="brand-name">Living to Eat</span>
+    </div>
+
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Abrir navegación"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="inicio.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="promociones.html" class="active" aria-current="page">Promociones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+  </header>
+
+
+  <!-- ---------- Hero ---------- -->
+
+  <section class="promo-hero">
+
+    <img
+      class="promo-hero-image"
+      src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1600&q=80"
+      alt="Restaurante Living to Eat"
+    >
+
+    <div class="promo-hero-overlay">
+
+      <p class="hero-kicker">OFERTAS ESPECIALES</p>
+
+      <h1>Promociones</h1>
+
+      <p class="hero-text">
+        Disfruta nuestras promociones especiales y comparte
+        momentos únicos con el mejor sabor de Living to Eat.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ---------- Introducción ---------- -->
+
+  <section class="promo-intro">
+
+    <p class="section-kicker">Para disfrutar más</p>
+
+    <h2 class="section-title">
+      Promociones de la semana
+    </h2>
+
+    <p class="section-description">
+      Aprovecha nuestras ofertas especiales y descubre nuevas
+      formas de disfrutar nuestra propuesta gastronómica.
+    </p>
+
+  </section>
+
+
+  <!-- ---------- Filtros ---------- -->
+
+  <nav class="promo-tabs" id="promoTabs" aria-label="Categorías de promociones">
+
+    <button class="promo-tab active" data-category="todas">
+      Todas
+    </button>
+
+    <button class="promo-tab" data-category="familia">
+      Familia
+    </button>
+
+    <button class="promo-tab" data-category="pareja">
+      Pareja
+    </button>
+
+    <button class="promo-tab" data-category="bebidas">
+      Bebidas
+    </button>
+
+  </nav>
+
+
+  <!-- ---------- Promociones ---------- -->
+
+  <main class="promotions-container">
+
+    <!-- Promoción 1 -->
+
+    <article class="promotion-card" data-category="familia">
+
+      <img
+        src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80"
+        alt="Plato especial para compartir"
+        class="promotion-image"
+      >
+
+      <div class="promotion-content">
+
+        <span class="promotion-tag">
+          FAMILIA
+        </span>
+
+        <h2>
+          Sabor para compartir
+        </h2>
+
+        <p>
+          Disfruta un plato principal para compartir acompañado
+          de papas rústicas y ensalada de la casa.
+        </p>
+
+        <div class="promotion-price">
+          <span class="old-price">S/ 110</span>
+          <span class="new-price">S/ 89</span>
+        </div>
+
+        <button class="promo-button" data-promo="Sabor para compartir">
+          Ver promoción
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- Promoción 2 -->
+
+    <article class="promotion-card" data-category="pareja">
+
+      <img
+        src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=80"
+        alt="Cena especial para dos personas"
+        class="promotion-image"
+      >
+
+      <div class="promotion-content">
+
+        <span class="promotion-tag">
+          PAREJA
+        </span>
+
+        <h2>
+          Cena para dos
+        </h2>
+
+        <p>
+          Una experiencia especial para compartir en pareja,
+          con dos platos principales y una bebida por persona.
+        </p>
+
+        <div class="promotion-price">
+          <span class="old-price">S/ 150</span>
+          <span class="new-price">S/ 119</span>
+        </div>
+
+        <button class="promo-button" data-promo="Cena para dos">
+          Ver promoción
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- Promoción 3 -->
+
+    <article class="promotion-card" data-category="bebidas">
+
+      <img
+        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80"
+        alt="Bebidas y acompañamientos"
+        class="promotion-image"
+      >
+
+      <div class="promotion-content">
+
+        <span class="promotion-tag">
+          BEBIDAS
+        </span>
+
+        <h2>
+          Refresca tu experiencia
+        </h2>
+
+        <p>
+          Al pedir dos platos principales, recibe dos bebidas
+          de la casa para acompañar tu comida.
+        </p>
+
+        <div class="promotion-price">
+          <span class="old-price">S/ 30</span>
+          <span class="new-price">S/ 20</span>
+        </div>
+
+        <button class="promo-button" data-promo="Refresca tu experiencia">
+          Ver promoción
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- Promoción 4 -->
+
+    <article class="promotion-card" data-category="familia">
+
+      <img
+        src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80"
+        alt="Postres para compartir"
+        class="promotion-image"
+      >
+
+      <div class="promotion-content">
+
+        <span class="promotion-tag">
+          FAMILIA
+        </span>
+
+        <h2>
+          Dulce momento
+        </h2>
+
+        <p>
+          Comparte dos postres de nuestra carta y recibe una
+          bebida de cortesía para acompañar la experiencia.
+        </p>
+
+        <div class="promotion-price">
+          <span class="old-price">S/ 45</span>
+          <span class="new-price">S/ 32</span>
+        </div>
+
+        <button class="promo-button" data-promo="Dulce momento">
+          Ver promoción
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <p class="empty-state" id="emptyState" hidden>
+      No hay promociones disponibles en esta categoría.
+    </p>
+
+  </main>
+
+
+  <!-- ---------- Información ---------- -->
+
+  <section class="promo-info">
+
+    <h2>
+      Una buena ocasión siempre merece buen sabor
+    </h2>
+
+    <p>
+      Nuestras promociones están pensadas para que puedas
+      disfrutar más de la experiencia Living to Eat.
+    </p>
+
+    <a href="reservas.html" class="cta-link">
+      Reserva tu mesa
+    </a>
+
+  </section>
+
+
+  <!-- ---------- Footer ---------- -->
+
+  <footer class="site-footer">
+
+    <nav class="footer-nav">
+
+      <a href="inicio.html">Quiénes somos</a>
+      <a href="contacto.html">Trabaja con nosotros</a>
+      <a href="#">Aviso legal</a>
+      <a href="#">Política de privacidad</a>
+
+    </nav>
+
+    <p>
+      © 2026 Living to Eat Restaurante. Todos los derechos reservados.
+    </p>
+
+  </footer>
+
+
+  <script src="script-promociones.js"></script>
+
+</body>
+</html>
