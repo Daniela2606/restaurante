@@ -3,453 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Living to Eat - Experiencia Gastronómica</title>
+<title>Living to Eat — Experiencia Gastronómica</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com">
-
-<style>
-:root{
-    --wine:#6b1f2b;
-    --gold:#d4af37;
-    --cream:#f8f5f0;
-    --dark:#1e1e1e;
-    --white:#ffffff;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Work Sans',sans-serif;
-    background:var(--cream);
-    color:var(--dark);
-    line-height:1.6;
-}
-
-.site-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
-
-    background:rgba(0,0,0,.85);
-    backdrop-filter:blur(10px);
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:15px 5%;
-}
-
-.brand-name{
-    color:white;
-    font-family:'Fraunces',serif;
-    font-size:1.8rem;
-    font-weight:700;
-}
-
-.site-nav{
-    display:flex;
-    gap:20px;
-}
-
-.site-nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.site-nav a:hover{
-    color:var(--gold);
-}
-
-.hero{
-    position:relative;
-    height:100vh;
-}
-
-.hero-image{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.hero-overlay{
-    position:absolute;
-    inset:0;
-
-    background:rgba(0,0,0,.55);
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-    color:white;
-    padding:20px;
-}
-
-.hero-kicker{
-    color:var(--gold);
-    letter-spacing:3px;
-    margin-bottom:15px;
-}
-
-.hero h1{
-    font-family:'Fraunces',serif;
-    font-size:5rem;
-    margin-bottom:15px;
-}
-
-.hero-text{
-    max-width:700px;
-    font-size:1.2rem;
-}
-
-.quick-nav{
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
-    justify-content:center;
-    margin-top:40px;
-}
-
-.quick-card{
-    text-decoration:none;
-    color:white;
-
-    background:rgba(255,255,255,.15);
-    border:1px solid rgba(255,255,255,.3);
-
-    border-radius:12px;
-    padding:18px 28px;
-
-    min-width:130px;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:8px;
-
-    transition:.3s;
-}
-
-.quick-card:hover{
-    transform:translateY(-4px);
-    background:rgba(255,255,255,.25);
-}
-
-.icon{
-    font-size:28px;
-}
-
-.category-tabs{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    flex-wrap:wrap;
-
-    padding:50px 20px;
-}
-
-.tab{
-    background:#ddd;
-    border:none;
-    border-radius:50px;
-    padding:12px 25px;
-    cursor:pointer;
-}
-
-.tab.active{
-    background:var(--wine);
-    color:white;
-}
-
-.menu-card{
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
-}
-
-.menu-group{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-.group-image{
-    width:100%;
-    height:450px;
-    object-fit:cover;
-}
-
-.group-title{
-    text-align:center;
-    padding:30px;
-    color:var(--wine);
-    font-family:'Fraunces',serif;
-    font-size:2.5rem;
-}
-
-.menu-item{
-    padding:25px;
-    border-top:1px solid #eee;
-}
-
-.item-row{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.leader{
-    flex:1;
-    border-bottom:2px dotted #ccc;
-}
-
-.price{
-    font-weight:bold;
-    color:var(--wine);
-}
-
-.item-desc{
-    margin-top:10px;
-    color:#666;
-}
-
-.extra-section{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.extra-section h2{
-    color:var(--wine);
-    font-family:'Fraunces',serif;
-    margin-bottom:20px;
-    font-size:2.4rem;
-}
-
-.site-footer{
-    background:var(--dark);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-}
-
-.footer-nav{
-    margin-bottom:20px;
-}
-
-.footer-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
-}
-
-.footer-nav a:hover{
-    color:var(--gold);
-}
-
-@media(max-width:768px){
-
-    .site-header{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .site-nav{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .hero h1{
-        font-size:3rem;
-    }
-
-    .item-row{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .leader{
-        display:none;
-    }
-
-    .group-image{
-        height:250px;
-    }
-}
-</style>
+<link rel="stylesheet" href="sytles.css">
 </head>
-
 <body>
 
-<header class="site-header">
-
+  <header class="site-header">
     <div class="brand">
-        <span class="brand-name">Living to Eat</span>
+      <span class="brand-name">Living to Eat</span>
     </div>
 
-    <nav class="site-nav">
-        #inicioInicio</a>
-        #menuMenú</a>
-        #reservasReservas</a>
-        #promocionesPromociones</a>
-        #contactoContacto</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="inicio.html" class="active" aria-current="page">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
+  </header>
 
-</header>
-
-<section class="hero" id="inicio">
-
-    <img
-        class="hero-image"
-        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80"
-        alt="Restaurante Living to Eat">
+  <section class="hero" id="inicio">
+    <img class="hero-image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80" alt="Restaurante Living to Eat">
 
     <div class="hero-overlay">
+      <p class="hero-kicker">DISFRUTA DE UNA EXPERIENCIA ÚNICA</p>
+      <h1>Living to Eat</h1>
+      <p class="hero-text">Explora nuestro menú, promociones y reserva tu mesa en un ambiente inigualable.</p>
 
-        <p class="hero-kicker">DISFRUTA DE UNA EXPERIENCIA ÚNICA</p>
-
-        <h1>Living to Eat</h1>
-
-        <p class="hero-text">
-            Explora nuestro menú, promociones y reserva tu mesa en un ambiente inigualable.
-        </p>
-
-        <div class="quick-nav">
-
-            #menu
-                <span class="icon">🍽️</span>
-                <span>Menú</span>
-            </a>
-
-            #reservas
-                <span class="icon">📅</span>
-                <span>Reservas</span>
-            </a>
-
-            #promociones
-                <span class="icon">🎁</span>
-                <span>Promociones</span>
-            </a>
-
-            #contacto
-                <span class="icon">📞</span>
-                <span>Contacto</span>
-            </a>
-
-        </div>
-
+      <div class="quick-nav">
+        <a href="menu.html" class="quick-card">
+          <span class="icon">🍽️</span>
+          <span>Menú</span>
+        </a>
+        <a href="reservas.html" class="quick-card">
+          <span class="icon">📅</span>
+          <span>Reservas</span>
+        </a>
+        <a href="promociones.html" class="quick-card">
+          <span class="icon">🎁</span>
+          <span>Promociones</span>
+        </a>
+        <a href="contacto.html" class="quick-card">
+          <span class="icon">📞</span>
+          <span>Contacto</span>
+        </a>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<section id="menu">
-
-    <nav class="category-tabs">
-        <button class="tab active">Entrantes</button>
-        <button class="tab">Platos Principales</button>
-        <button class="tab">Postres</button>
-        <button class="tab">Bebidas</button>
-    </nav>
+  <section class="featured-menu">
+    <p class="section-kicker">Nuestra propuesta</p>
+    <h2 class="section-title">Un adelanto del menú</h2>
 
     <main class="menu-card">
+      <section class="menu-group">
+        <img class="group-image" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80" alt="Platos principales de Living to Eat">
+        <h3 class="group-title">Platos principales</h3>
 
-        <section class="menu-group">
+        <article class="menu-item">
+          <div class="item-row">
+            <h4>Lomo de ternera artesanal</h4>
+            <span class="leader"></span>
+            <span class="price">S/ 95.00</span>
+          </div>
+          <p class="item-desc">Lomo premium con puré trufado, espárragos y reducción de vino tinto.</p>
+        </article>
 
-            <img
-                class="group-image"
-                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80"
-                alt="Platos principales">
+        <article class="menu-item">
+          <div class="item-row">
+            <h4>Lubina salvaje al horno</h4>
+            <span class="leader"></span>
+            <span class="price">S/ 87.00</span>
+          </div>
+          <p class="item-desc">Verduras mediterráneas y emulsión de limón con finas hierbas.</p>
+        </article>
 
-            <h2 class="group-title">Platos Principales</h2>
-
-            <article class="menu-item">
-                <div class="item-row">
-                    <h3>Lomo de Ternera Artesanal</h3>
-                    <span class="leader"></span>
-                    <span class="price">S/ 95.00</span>
-                </div>
-                <p class="item-desc">
-                    Lomo premium con puré trufado, espárragos y reducción de vino tinto.
-                </p>
-            </article>
-
-            <article class="menu-item">
-                <div class="item-row">
-                    <h3>Lubina Salvaje al Horno</h3>
-                    <span class="leader"></span>
-                    <span class="price">S/ 87.00</span>
-                </div>
-                <p class="item-desc">
-                    Verduras mediterráneas y emulsión de limón con finas hierbas.
-                </p>
-            </article>
-
-            <article class="menu-item">
-                <div class="item-row">
-                    <h3>Risotto de Champiñones y Trufa</h3>
-                    <span class="leader"></span>
-                    <span class="price">S/ 75.00</span>
-                </div>
-                <p class="item-desc">
-                    Arroz arborio con setas silvestres y queso parmesano añejado.
-                </p>
-            </article>
-
-        </section>
-
+        <article class="menu-item">
+          <div class="item-row">
+            <h4>Risotto de champiñones y trufa</h4>
+            <span class="leader"></span>
+            <span class="price">S/ 75.00</span>
+          </div>
+          <p class="item-desc">Arroz arborio con setas silvestres y queso parmesano añejado.</p>
+        </article>
+      </section>
     </main>
 
-</section>
+    <a href="menu.html" class="cta-button">Ver la carta completa</a>
+  </section>
 
-<section id="reservas" class="extra-section">
+  <section class="extra-section" id="reservas-preview">
     <h2>Reservas</h2>
     <p>Reserva tu mesa y disfruta una experiencia gastronómica única.</p>
-</section>
+    <a href="reservas.html" class="cta-link">Reservar ahora</a>
+  </section>
 
-<section id="promociones" class="extra-section">
+  <section class="extra-section alt" id="promociones-preview">
     <h2>Promociones</h2>
     <p>Descubre ofertas especiales y menús exclusivos cada semana.</p>
-</section>
+    <a href="promociones.html" class="cta-link">Ver promociones</a>
+  </section>
 
-<section id="contacto" class="extra-section">
+  <section class="extra-section" id="contacto-preview">
     <h2>Contacto</h2>
     <p>📞 +51 999 999 999</p>
     <p>✉ contacto@livingtoeat.com</p>
     <p>📍 Av. Gastronómica 123, Lima, Perú</p>
-</section>
+    <a href="contacto.html" class="cta-link">Ir a contacto</a>
+  </section>
 
-<footer class="site-footer">
-
+  <footer class="site-footer">
     <nav class="footer-nav">
-        #inicioQuiénes Somos</a>
-        #contactoTrabaja con Nosotros</a>
-        #Aviso Legal</a>
-        #Política de Privacidad</a>
+      <a href="inicio.html">Quiénes somos</a>
+      <a href="contacto.html">Trabaja con nosotros</a>
+      <a href="#">Aviso legal</a>
+      <a href="#">Política de privacidad</a>
     </nav>
+    <p>© 2026 Living to Eat Restaurante. Todos los derechos reservados.</p>
+  </footer>
 
-    <p>
-        © 2026 Living to Eat Restaurante. Todos los derechos reservados.
-    </p>
-
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
