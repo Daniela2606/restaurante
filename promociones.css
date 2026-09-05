@@ -40,7 +40,7 @@ a {
   top: 0;
   z-index: 100;
 
-  background: rgba(0, 0, 0, 0.85);
+  background: #2b4536;
   backdrop-filter: blur(10px);
 
   display: flex;
@@ -440,7 +440,7 @@ a {
 /* ---------- Footer ---------- */
 
 .site-footer {
-  background: var(--dark);
+  background: #2b4536;
 
   color: var(--white);
 
