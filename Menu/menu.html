@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú — Sazón & Leña</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos-menu.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">LTE</span>
+      <span class="brand-name">LIVING TO EAT</span>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="inicio.html">Inicio</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="menu.html" class="active" aria-current="page">Menú</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img class="hero-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" alt="Mesa servida con platos del restaurante">
+    <div class="hero-overlay">
+      <p class="hero-kicker">Carta del restaurante</p>
+      <h1>El menú</h1>
+      <p class="hero-text">Todo se cocina a fuego de leña, con ingredientes de mercado y recetas que no se apuran. Elige una categoría o recorre la carta completa.</p>
+    </div>
+  </section>
+
+  <nav class="category-tabs" id="categoryTabs" aria-label="Categorías del menú">
+    <button class="tab active" data-category="todos">Todos</button>
+    <button class="tab" data-category="entradas">Entradas</button>
+    <button class="tab" data-category="fondos">Fondos</button>
+    <button class="tab" data-category="postres">Postres</button>
+    <button class="tab" data-category="bebidas">Bebidas</button>
+  </nav>
+
+  <main class="menu-card">
+
+    <section class="menu-group" data-category="entradas">
+      <img class="group-image" src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=900&q=80" alt="Entrada del restaurante servida en plato blanco">
+      <h2 class="group-title">Entradas</h2>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Causa de cangrejo</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 28</span>
+        </div>
+        <p class="item-desc">Papa amarilla, cangrejo, palta y un toque de ají amarillo.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Anticuchos de corazón</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 24</span>
+        </div>
+        <p class="item-desc">Marinados doce horas, papa dorada y choclo a la parrilla.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Tiradito de leña</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 32</span>
+        </div>
+        <p class="item-desc">Pescado del día ahumado brevemente, leche de tigre y rocoto.</p>
+      </div>
+    </section>
+
+    <section class="menu-group" data-category="fondos">
+      <img class="group-image" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Plato de fondo a la parrilla">
+      <h2 class="group-title">Fondos</h2>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Pollo a la brasa de leña</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 42</span>
+        </div>
+        <p class="item-desc">Doce horas de marinado, papas rústicas y ensalada de la casa.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Costillar ahumado</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 58</span>
+        </div>
+        <p class="item-desc">Seis horas al humo de algarrobo, puré de camote y salsa de la casa.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Risotto de setas y hierbas</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 36</span>
+        </div>
+        <p class="item-desc">Setas salteadas al carbón, parmesano curado y hierbas frescas.</p>
+      </div>
+    </section>
+
+    <section class="menu-group" data-category="postres">
+      <img class="group-image" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80" alt="Postre presentado en plato de cerámica">
+      <h2 class="group-title">Postres</h2>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Suspiro a la leña</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 18</span>
+        </div>
+        <p class="item-desc">Manjar blanco tostado al fuego y merengue de oporto.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Tarta de higos asados</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 20</span>
+        </div>
+        <p class="item-desc">Masa quebrada, higos al carbón y crema de mascarpone.</p>
+      </div>
+    </section>
+
+    <section class="menu-group" data-category="bebidas">
+      <img class="group-image" src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&q=80" alt="Bebida servida en copa sobre la mesa">
+      <h2 class="group-title">Bebidas</h2>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Chicha morada de la casa</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 12</span>
+        </div>
+        <p class="item-desc">Preparada a diario con canela, membrillo y piña.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Pisco sour clásico</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 22</span>
+        </div>
+        <p class="item-desc">Pisco quebranta, limón de Chulucanas y clara de huevo.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-row">
+          <h3>Café de altura</h3>
+          <span class="leader" aria-hidden="true"></span>
+          <span class="price">S/ 10</span>
+        </div>
+        <p class="item-desc">Tueste medio, servido en prensa francesa para dos.</p>
+      </div>
+    </section>
+
+    <p class="empty-state" id="emptyState" hidden>No hay platos en esta categoría todavía.</p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="inicio.html">Inicio</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <p class="footer-note">Sazón & Leña · Cocina a fuego de leña</p>
+  </footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
