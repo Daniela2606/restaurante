@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas — Sazón & Leña</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">LTE</span>
+      <span class="brand-name">LIVING TO EAT</span>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="inicio.html">Inicio</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="reservas.html" class="active" aria-current="page">Reservas</a>
+      <a href="menu.html">Menú</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img class="hero-image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80" alt="Mesa reservada en el restaurante">
+    <div class="hero-overlay">
+      <p class="hero-kicker">Asegura tu mesa</p>
+      <h1>Reserva tu Experiencia</h1>
+      <p class="hero-text">Completa el siguiente formulario para hacer tu reserva en Sazón & Leña.</p>
+    </div>
+  </section>
+
+  <main class="menu-card" style="padding-top: 2rem;">
+    <section class="menu-group">
+      <h2 class="group-title">Formulario de Reserva</h2>
+      <form id="formReserva" style="display: flex; flex-direction: column; gap: 1.2rem;">
+        <div>
+          <label for="nombre" style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--gold); border-radius: 4px; background: #fff;">
+        </div>
+
+        <div>
+          <label for="fecha" style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--gold); border-radius: 4px; background: #fff;">
+        </div>
+
+        <div>
+          <label for="personas" style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Número de personas:</label>
+          <input type="number" id="personas" name="personas" min="1" max="15" value="2" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--gold); border-radius: 4px; background: #fff;">
+        </div>
+
+        <button type="submit" style="background: var(--green-deep); color: var(--parchment); padding: 0.9rem; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; margin-top: 1rem;">
+          Confirmar Reserva
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-note">Sazón & Leña · Cocina a fuego de leña</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
