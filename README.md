@@ -31,16 +31,3 @@ Living To Eat es una página web para un restaurante que permite visualizar info
 ### ¿Cómo facilita GitHub el trabajo colaborativo en un proyecto de desarrollo de software?
 
 GitHub facilita el trabajo colaborativo permitiendo que varios integrantes trabajen simultáneamente en diferentes ramas sin afectar el proyecto principal. Además, proporciona herramientas como Issues para organizar tareas, Commits para registrar cambios, Pull Requests para revisar el trabajo realizado y Merge para integrar las modificaciones aprobadas. Esto mejora la organización, la comunicación y el control de versiones dentro del equipo.
-NOMBRE DEL PROYECTO: RESTAURANTE LIVING TO EAT
-
-OBJETIVO: Creacion de una pagina en grupo a travez de github
-
-INTEGRANTES DEL GRUPO:
-- RICHARD ANDERSON CELESTINO SANCHEZ
-- ADRIAN RENEE MENDIZABAL MEZA
-- MIGUELIUS FREDY CASTRO TORRES
-- HONORIO ISRAEL PEREZ YUPANQUI
-- YERIMI DANIELA GRANDA MENDOZA
-  
-DESCRIPCIÓN:
-Creación de una pagina web de restaurante de comida
